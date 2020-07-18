@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Siqiao Ruan">
+    <base href="/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="accountcreation.js" defer="defer"></script>
+    <title>Account Creation</title>
+    <style>
+      * {
+        font-family: 'Roboto', sans-serif;
+      }
+      body {
+        margin:0;
+        padding: 0;
+        background: url("./image/screen1.jpg");
+      }
+      h1 {
+        text-align: center;
+        font-weight: 300;
+        color: #434343;
+      }
+      #container {
+        position: absolute;
+        top: 25vh;
+        left: 25vw;
+        background-color: white;
+        width: 50vw;
+        height: 57vh;
+        padding: 0;
+        margin: 0 auto;
+        overflow: auto;
+      }
+      #accform {
+        margin: 0 auto;
+        width: 30vw;
+        height: 30vh;
+        text-align: center;
+      }
+      input {
+        height: 5vh;
+        width: 15vw;
+        font-size: 2vh;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #btn {
+        background-color: #6699a1;
+        border: none; 
+        color: white; 
+        padding: 12px 5.1vw; 
+        font-size: 16px; 
+        cursor: pointer; 
+        margin-top: 5px;
+      }
+      #btn:hover {
+        background-color: #2e5c6e;
+      }
+      table {
+        margin: 0 auto;
+        width: 30vw;
+      }
+
+      @media only screen and (max-width: 600px){
+        #container {
+          position: absolute;
+          top: 23vh;
+          left: 10vw;
+          background-color: white;
+          width: 80vw;
+          height: 50vh;
+          margin: 0 auto;
+          overflow: auto;
+        }
+        h1 {
+          font-size: 24px;
+        }
+        input {
+          border: 1px solid black;
+          width: 30vw;
+        }
+        #accform {
+          margin: 0 auto;
+          width: 50vw;
+          height: 30vh;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <h1>Create Your Account</h1>
+
+      <form action="#" name="accountcreationform" method="post" id="accform">
+        <table>
+          <tr>
+            <td><i class='fas fa-user' style='font-size:36px'></i></td>
+            <td><input name="username" placeholder="Username" type="text" class="userinput"></td>
+          </tr>
+          <tr>
+              <td> <i class="fa fa-envelope" style="font-size:36px"></i></td>
+              <td> <input name="email" placeholder="Email" type="email" class="userinput"></td>
+          </tr>
+          <tr>
+              <td> <i class='fas fa-user-lock' style='font-size:36px'></i></td>
+              <td> <input name="password" placeholder="Password" type="password" class="userinput"></td>
+          </tr>
+          <tr>
+              <td> <i class='fas fa-user-lock' style='font-size:36px'></i></td>
+              <td> <input name="repassword" placeholder="Re-enter password" type="password" class="userinput"><br /></td>
+          </tr>
+        </table>
+          
+        <button type="submit" class="submit" id="btn">
+          Create 
+          <i class="fas fa-cube"></i>
+        </button>
+      </form>
+    </div>
+    
+  </body>
+
+</html>

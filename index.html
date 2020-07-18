@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Siqiao Ruan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+  <script type="text/javascript" src="main.js" defer="defer"></script>
+  <style>
+    * {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    body {
+      background-color: #258a99;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 300;
+      color: #757373;
+    }
+
+    @media only screen and (min-width: 600px){
+      #container {
+        position: absolute;
+        top: 25vh;
+        left: 25vw;
+        background-color: white;
+        width: 50vw;
+        height: 50vh;
+        padding: 0;
+        margin: 0 auto;
+        overflow: auto;
+      }
+    }
+
+    #loginform {
+      margin: 0 auto;
+      width: 30vw;
+      height: 30vh;
+      text-align: center;
+    }
+
+    .formbox {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    input {
+      height: 5vh;
+      width: 15vw;
+      font-size: 2vh;
+    }
+
+    label {
+      font-size: 18px;
+    }
+
+    #errormsg {
+      padding-top: 10px;
+      color: red;
+    }
+
+    #loginbutton {
+      background-color: #6699a1;
+      border: none;
+      color: white;
+      padding: 12px 5.5vw;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #loginbutton:hover {
+      background-color: #2e5c6e;
+    }
+
+    div#container {
+      -background-image: url("./image/screen.jpg");
+      width: 50%;
+    }
+
+    .formbox {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 600px){
+      #container {
+        position: absolute;
+        top: 25vh;
+        left: 25vw;
+        background-color: white;
+        width: 80vw;
+        height: 35vh;
+        padding: 0;
+        margin: 0 auto;
+        overflow: auto;
+      }
+
+      input {
+        border: 1px solid black;
+        width: 30vw;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      #accountlink {
+        font-size: 10px;
+      }
+
+      #errormsg {
+        font-size: 10px;
+      }
+    }
+  </style>
+  <title>Login Page</title>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <h1>Movie List Login</h1>
+    <form action="#" method="POST" id="loginform" name="login">
+
+      <div class="formbox">
+        <input name="username" placeholder="Username" type="text" class="userinput"><br />
+      </div>
+
+      <div class="formbox">
+        <input name="password" placeholder="Password" type="password" class="userinput"><br />
+      </div>
+
+      <div class="formbox">
+        <button type="submit" class="submit" id="loginbutton">
+          Login
+          <i class="fas fa-sign-in-alt"></i>
+        </button>
+      </div>
+
+      <div class="formbox">
+        <a href="./Accountcreation.html" id="accountlink">Create a new account</a>
+        <div id="errormsg"></div>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
